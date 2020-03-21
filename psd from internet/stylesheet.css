@@ -224,6 +224,7 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
 }
 .smlcontainer h1 {
   align-self: center;
