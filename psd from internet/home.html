@@ -10,21 +10,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="topbar">
+    <div  class="topbar">
+        <a name="top"></a>
         <nav class="navbar">
             <div class="container-1">
                 <div class="creativia">
                     <img src="картинки/Creativia1.png">
                 </div>
                 <div class="navlinks">
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT US</a>
-                    <a href="#">PORTFOLIO</a>
-                    <a href="#">CLIENTS</a>
-                    <a href="#">TEAM</a>
-                    <a href="#">SERVICE</a>
-                    <a href="#">BLOG</a>
-                    <a href="#">CONTACT</a>
+                    <a href="#top">HOME</a>
+                    <a href="#about">ABOUT US</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#clients">CLIENTS</a>
+                    <a href="#team">TEAM</a>
+                    <a href="#service">SERVICE</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#contact">CONTACT</a>
                 </div>
             </div> 
         </nav>
@@ -42,8 +43,12 @@
                 </div>
             </div>
         </div>
+        <div class="arrow-top">
+            <i class="fas fa-long-arrow-alt-up"></i>
+        </div>
     </div>
     <div class="about">
+        <a name="about"></a>
         <div class="container">
             <div class="second-bar">
             <div class="preview">
@@ -117,6 +122,7 @@
             </div>
         </div>
 <div class="portfolio">
+    <a name="portfolio"></a>
     <div class="smlcontainer">
         <h1>portfolio</h1>
         <div class="portfoilio-types">
@@ -170,6 +176,7 @@
 </div>
 </div>
 <div class="our-clients">
+    <a name="clients"></a>
     <div class="container-6">
         <div class="top-part-clients">
             <h1>our <a class="redtext">product features</a>
@@ -179,15 +186,24 @@
         <div class="bottom-part-clients">
             <div class="clients-comments">
                 <h1>HAPPY CLIENTS SAY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit<p> dignissim luctus eu in urna. Dapibus egestas turpis.</p></p>          
-                <img src="картинки/мужик.png">           
+                <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.</p>          
+               
+                <div class="wrapper">
+           
+                    <div id='slider' class="slider">
+                            <img src="картинки/мужик.png">           
                 <a class="amr" href="#">AMR SROUR</a>
-            <div class="mini-buttons">
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
-            </div>
+        
+                     
+                            <img src="картинки/мужик.png">           
+                <a class="amr" href="#">JACK SROUR</a>
+                    
+                    </div>
+              
+                </div>
+             </div>
+
+
             <div class="webstudios">
                 <div class="top-studio">
                     <img src="картинки/fish.png">
@@ -198,10 +214,12 @@
                     <img src="картинки/penguine.png">
                 </div>
            </div>
-        </div>    
+        </div>  
+        
     </div>
 </div>
 <div class="teamWork">
+    <a name="team"></a>
     <div class="container-7">
         <div class="teamworkPreview">
             <h1>our <a class="redtext">teamwork</a>
@@ -264,6 +282,7 @@
     </div>
 </div>
 <div class="our-service">
+    <a name="service"></a>
     <div class="container-8">
         <div class="ourServicePreview">
             <h1>our <a class="redtext">service</a>
@@ -474,6 +493,7 @@
         </div>
 </div>
 <div class="our-Blog">
+    <a name="blog"></a>
     <div class="container">
         <div class="ourBlogPreview">
             <h1>our <a class="redtext">Blog</a>
@@ -541,6 +561,7 @@
     </div>
 </div>
 <div class="findUS">
+    <a name="contact"></a>
     <div class="container">
         <div class="ourPlansPreview">
             <h1>Fine us <a class="redtext">here</a>
@@ -565,11 +586,14 @@
             <div class="input-bar">
                 <div class="container-input">
                     <h1>SEND MESSAGE</h1>
-                    <input class="simple-input" type="text" placeholder="Name">
-                    <input class="simple-input" type="email" placeholder="Email">
-                    <input class="simple-input" type="text" placeholder="Subject">
+                    <input id="name" class="simple-input" type="text" placeholder="Name">
+                    <div id="nameRule" class="rules">*Name should be no less than 6 characters.</div>
+                    <input id="email" class="simple-input" type="email" placeholder="Email">
+                    <div id="emailRule" class="rules">*Email is incorrect.</div>
+                    <input id="subject" class="simple-input" type="text" placeholder="Subject">
+                    <div id="subjectRule" class="rules">*Subject should be no less than 6 characters.</div>
                     <input class="input-coment" type="text">
-                    <button>
+                    <button id="submitBtn">
                         SUBMIT
                     </button>
                 </div>
@@ -580,6 +604,18 @@
 <div class="bottom">
     <h1>Creativia</h1>
     <a>Design by  Amr Srour</a>
+</div>
+<div class="modal">
+        <div class="modalcontent">
+            <div class="modaltext">
+                <span class="close">&times;</span>
+                <h1>Thank you for your massage!
+                </h1>
+                <p>It is very important for us, we wil answer you as soon as possible.</p>
+                <button class="close-btn">Ok</button>
+            </div>
+        </div>
+  
 </div>
 <script src="main.js"></script>
 </body>
